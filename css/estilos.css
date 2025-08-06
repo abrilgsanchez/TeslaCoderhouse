@@ -1,0 +1,270 @@
+/*estilos generales*/
+*{
+  font-family: "Manrope", sans-serif;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(148, 148, 145);
+
+}
+
+nav ul {
+  list-style: none; 
+  display: flex;     
+  justify-content: center; 
+  gap: 60px;         
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important
+;
+        flex-basis: auto;
+        justify-content: space-around;
+    }
+}
+
+main{text-align: center;
+ padding-top: 80px;}
+
+/*estilos del header*/
+/*.index-header {
+    background-image: url(../img/banner2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 95vh;
+}
+*/ 
+
+/*estilos index-main*/
+.novedades img{
+ width: 100%;
+    height: auto;
+}
+
+.novedades button{
+    width: 100%;
+    background-color: rgb(36, 36, 36);
+    color: rgb(184, 181, 181);
+}
+
+/*estilos modelos-main*/
+.letra-gruesa{
+    font-weight: 550;
+}
+
+/*estilos modelos*/
+.modelos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 2rem;
+  padding: 2rem;
+  justify-items: center;
+}
+
+.modelos article {
+  background-color: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+  width: 100%;
+  max-width: 400px;
+}
+
+.modelos article:hover {
+  transform: translateY(-5px);
+}
+
+.modelos img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.modelos h3 {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
+
+.modelos p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+
+/*estilos quienes somos*/
+.h2-quienes-somos {
+    color: rgb(99, 100, 101)
+    ;
+}
+
+.h3-quienes-somos {
+    color: rgb(138, 139, 141)
+    ;
+}
+
+.quienes-somos-main {
+  max-width: 1000px;
+  margin: auto;
+  font-family: 'Manrope', sans-serif;
+}
+
+.h2-quienes-somos {
+  color: rgb(99, 100, 101);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.p-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.grid-quienes-somos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.qs-bloque {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+
+.h3-quienes-somos {
+  color: rgb(138, 139, 141);
+  margin-bottom: 0.8rem;
+}
+
+
+
+/*estilos formulario*/
+form{
+color: rgb(70, 68, 68);
+}
+
+form button{
+    background-color: rgb(135, 132, 132);
+    color: rgb(37, 36, 36);
+}
+
+
+.reserva-main {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.formulario-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.formulario-grid input[type="text"],
+.formulario-grid select {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.duracion {
+  display: flex;
+  gap: 1rem;
+}
+
+.formulario-grid button {
+  grid-column: 1 / -1;
+  padding: 0.6rem 1.2rem;
+  background-color: rgb(36, 35, 35);
+  color: rgb(246, 240, 240);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.info-reserva {
+  background-color: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+
+/*estilos carga*/
+.no-centrar {
+    text-align: left;
+}
+
+.cargador-img {
+ width: 100%;
+height: auto;
+}
+
+/*estilos del footer*/
+footer{
+    background-color: rgb(142, 141, 141);
+    color: rgb(255, 255, 255);
+}
+
+footer img {
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+}
+
+
+/*responsive*/
+@media only screen and (max-width: 767px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .modelos {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .formulario-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .duracion {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .info-reserva {
+    text-align: center;
+  }
+
+  .grid-quienes-somos {
+    grid-template-columns: 1fr;
+  }
+
+  .novedades img,
+  .cargador-img {
+    width: 100%;
+  }
+
+  .novedades button {
+    width: 100%;
+  }
+
+  footer img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
